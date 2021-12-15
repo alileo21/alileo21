@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+<body>
+    <!--------- Header Section Start Here ---------------->
+    <div class="header-main">
+        <div class="wrapper">
+            <div class="logo float-left">
+                <a href="#"><img src="assets/images/wooninjas-logotype.svg" alt="logo"></a>
+            </div>
+            <div class="activity float-right mt-5">
+                <span class="float-left dark-gray-clr font-size-16 mt-5">Activity Timeline</span>
+                <label class="switch">
+                    <input type="checkbox" onclick="modedark()" id="mode" >
+                    <span class="slider"></span>
+                </label>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--------- Header Section Area End Here ---------------->
+    <!--------- Tabs Section Start Here --------------------->
+    <div class="tabs-main mt-61">
+        <div class="wrapper">
+            <ul>
+                <li  onclick="tabfocus('tab-1')" class="active tab-menu">
+                    <a>
+                        <img class="float-left mr-10" src="assets/images/course-tab-icon.svg" alt="course tab icon">
+                        <span class="light-gray-clr font-size-16 f-w-700 float-left mt-4">Course</span>
+                        <div class="clear"></div>
+                    </a>
+                </li>
+                <li onclick="tabfocus('tab-2')" class="tab-menu">
+                    <a>
+                        <img class="float-left mr-10" src="assets/images/materials-tab-icon.svg" alt="course tab icon">
+                        <span class="light-gray-clr font-size-16 f-w-700 float-left mt-4">Materials</span>
+                        <div class="clear"></div>
+                    </a>
+                </li>
+                <li onclick="tabfocus('tab-3')" class="tab-menu">
+                    <a>
+                        <img class="float-left mr-10" src="assets/images/activity-tab-icon.svg" alt="course tab icon">
+                        <span class="light-gray-clr font-size-16 f-w-700 float-left mt-4">Activity</span>
+                        <div class="clear"></div>
+                    </a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+            <div class="border-bottom"></div>
+            <div class="tabs-content">
+                <div class="tabs" id="tab-1" style="display: block;">
+                    <p class="dark-gray-clr font-size-16 l-h-24">
+                        tab 1
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="tabs" id="tab-2">
+                    <p class="dark-gray-clr font-size-16 l-h-24">
+                        tab 2<br>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="tabs" id="tab-3">
+                    <div class="activity-section">
+                        <button id="previous" class=" bg-white btn-button bor-r-6 dark-clr l-h-16 font-size-13 f-w-400 cursor-pointer" onclick="getPrevious();">
+                            <img class="mr-10" src="assets/images/previous-button-arrow.svg" alt="Previous">
+                            Previous
+                        </button>
+                        <div class="activity-inner" id="activity-1" >
+                            <span class="dark-clr l-h-24 font-size-14  d-block f-w-400 mt-20 mb-20">September 2, 2021</span>
+                            <div class="activity-information bor-r-6 mb-10">
+                                <div class="activity-information-left float-left">
+                                    <div class="activity-profile float-left mr-10">
+                                        <img src="assets/images/yellow-star.svg" alt="icon">
+                                        <img class="img-r w-25 ml-10 mr-10" src="assets/images/user-avatar-image.jpg" alt="avatar">
+                                        <span class="dark-clr l-h-16 font-size-13  d-block f-w-400 mt-5">Jhon Doe</span>
+                                     </div>
+                                    <div class="activity-course float-left mr-10">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-5">received achievement</p>
+                                    </div>
+                                    <div class="lesson-icon float-left">
+                                        <img class="mr-5 pr-t-5" src="assets/images/achievement-icon.svg" alt="achievement">
+                                        <a href="#" class="clr-blue t-under l-h-16 font-size-13 f-w-400 ">LearnDash Guru</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="activity-information-right float-right">
+                                    <div class="ativity-rollback float-left mr-20 ">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-1 cursor-pointer icon-text-hover">
+                                            <img class="mr-5 pr-t-4" src="assets/images/like-icon.svg" alt="rollback">
+                                            Like
+                                        </p>
+                                    </div>
+                                    <div class="ativity-rollback float-left mr-20">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-1 cursor-pointer icon-text-hover">
+                                            <img class="mr-5 pr-t-4" src="assets/images/rollback-icon.svg" alt="rollback">
+                                            Rollback
+                                        </p>
+                                    </div>
+                                    <div class="ativity-time float-left ">
+                                        <p class="dark-clr l-h-16 font-size-13 f-w-400 mt-5">
+                                            <img class="mr-10" src="assets/images/online.svg" alt="online">
+                                            1 minutes ago
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="activity-information bor-r-6 mb-10">
+                                <div class="activity-information-left float-left">
+                                    <div class="activity-profile float-left mr-10">
+                                        <img src="assets/images/upload.svg" alt="icon">
+                                        <img class="img-r w-25 ml-10 mr-10" src="assets/images/user-avatar-image.jpg" alt="avatar">
+                                        <span class="dark-clr l-h-16 font-size-13  d-block f-w-400 mt-5">Jhon Doe</span>
+                                    </div>
+                                    <div class="activity-course float-left mr-10">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-5">has submitted assignment to the lesson</p>
+                                    </div>
+                                    <div class="lesson-icon float-left">
+                                        <img class="mr-5 pr-t-5" src="assets/images/course-lesson-topic-icon.svg" alt="achievement">
+                                        <a href="#" class="clr-blue t-under l-h-16 font-size-13 f-w-400 ">Learning The Musical Dynamics</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="activity-information-right float-right">
+                                    <div class="ativity-time float-left ">
+                                        <p class="dark-clr l-h-16 font-size-13 f-w-400 mt-5">
+                                            <img class="mr-10" src="assets/images/online.svg" alt="online">
+                                            1 minutes ago
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="activity-information bor-r-6 mb-10">
+                                <div class="activity-information-left float-left">
+                                    <div class="activity-profile float-left mr-10">
+                                        <img src="assets/images/success.svg" alt="icon">
+                                        <img class="img-r w-25 ml-10 mr-10" src="assets/images/user-avatar-image.jpg" alt="avatar">
+                                        <span class="dark-clr l-h-16 font-size-13  d-block f-w-400 mt-5">Jhon Doe</span>
+                                    </div>
+                                    <div class="activity-course float-left mr-10">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-5">complete a lesson</p>
+                                    </div>
+                                    <div class="lesson-icon float-left">
+                                        <img class="mr-5 pr-t-5" src="assets/images/course-lesson-topic-icon.svg" alt="achievement">
+                                        <a href="#" class="clr-blue t-under l-h-16 font-size-13 f-w-400 ">Learning The Musical Dynamics</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="activity-information-right float-right">
+                                    <div class="ativity-time float-left ">
+                                        <p class="dark-clr l-h-16 font-size-13 f-w-400 mt-5">
+                                            <img class="mr-10" src="assets/images/online.svg" alt="online">
+                                            18 minutes ago
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="activity-information bor-r-6 mb-10">
+                                <div class="activity-information-left float-left">
+                                    <div class="activity-profile float-left mr-10">
+                                        <img src="assets/images/success.svg" alt="icon">
+                                        <img class="img-r w-25 ml-10 mr-10" src="assets/images/user-avatar-image.jpg" alt="avatar">
+                                        <span class="dark-clr l-h-16 font-size-13  d-block f-w-400 mt-5">Jhon Doe</span>
+                                    </div>
+                                    <div class="activity-course float-left mr-10">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-5">complete a lesson</p>
+                                    </div>
+                                    <div class="lesson-icon float-left">
+                                        <img class="mr-5 pr-t-5" src="assets/images/course-lesson-topic-icon.svg" alt="achievement">
+                                        <a href="#" class="clr-blue t-under l-h-16 font-size-13 f-w-400 ">Learning The Musical Dynamics</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="activity-information-right float-right">
+                                    <div class="ativity-time float-left ">
+                                        <p class="dark-clr l-h-16 font-size-13 f-w-400 mt-5">
+                                            <img class="mr-10" src="assets/images/online.svg" alt="online">
+                                            32 minutes ago
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="activity-information bor-r-6">
+                                <div class="activity-information-left float-left">
+                                    <div class="activity-profile float-left mr-10">
+                                        <img src="assets/images/play.svg" alt="icon">
+                                        <img class="img-r w-25 ml-10 mr-10" src="assets/images/user-avatar-image.jpg" alt="avatar">
+                                        <span class="dark-clr l-h-16 font-size-13  d-block f-w-400 mt-5">Jhon Doe</span>
+                                    </div>
+                                    <div class="activity-course float-left mr-10">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-5">enrolled into a course</p>
+                                    </div>
+                                    <div class="lesson-icon float-left">
+                                        <img class="mr-5 pr-t-5" src="assets/images/course-lesson-topic-icon.svg" alt="achievement">
+                                        <a href="#" class="clr-blue t-under l-h-16 font-size-13 f-w-400 ">How To Play Piano</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="activity-information-right float-right">
+                                    <div class="ativity-time float-left ">
+                                        <p class="dark-clr l-h-16 font-size-13 f-w-400 mt-5">
+                                            <img class="mr-10" src="assets/images/online.svg" alt="online">
+                                            10 minutes ago
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="activity-inner" id="activity-2">
+                            <span class="dark-clr l-h-24 font-size-14  d-block f-w-400 mt-20 mb-20">October 2, 2021</span>
+                            <div class="activity-information bor-r-6 mb-10">
+                                <div class="activity-information-left float-left">
+                                    <div class="activity-profile float-left mr-10">
+                                        <img src="assets/images/yellow-star.svg" alt="icon">
+                                        <img class="img-r w-25 ml-10 mr-10" src="assets/images/user-avatar-image.jpg" alt="avatar">
+                                        <span class="dark-clr l-h-16 font-size-13  d-block f-w-400 mt-5">Jhon Doe</span>
+                                    </div>
+                                    <div class="activity-course float-left mr-10">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-5">received achievement</p>
+                                    </div>
+                                    <div class="lesson-icon float-left">
+                                        <img class="mr-5 pr-t-5" src="assets/images/achievement-icon.svg" alt="achievement">
+                                        <a href="#" class="clr-blue t-under l-h-16 font-size-13 f-w-400 ">LearnDash Guru</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="activity-information-right float-right">
+                                    <div class="ativity-rollback float-left mr-20 ">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-1 cursor-pointer icon-text-hover">
+                                            <img class="mr-5 pr-t-4" src="assets/images/like-icon.svg" alt="rollback">
+                                            Like
+                                        </p>
+                                    </div>
+                                    <div class="ativity-rollback float-left mr-20">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-1 cursor-pointer icon-text-hover">
+                                            <img class="mr-5 pr-t-4" src="assets/images/rollback-icon.svg" alt="rollback">
+                                            Rollback
+                                        </p>
+                                    </div>
+                                    <div class="ativity-time float-left ">
+                                        <p class="dark-clr l-h-16 font-size-13 f-w-400 mt-5">
+                                            <img class="mr-10" src="assets/images/online.svg" alt="online">
+                                            1 minutes ago
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="activity-information bor-r-6 mb-10">
+                                <div class="activity-information-left float-left">
+                                    <div class="activity-profile float-left mr-10">
+                                        <img src="assets/images/upload.svg" alt="icon">
+                                        <img class="img-r w-25 ml-10 mr-10" src="assets/images/user-avatar-image.jpg" alt="avatar">
+                                        <span class="dark-clr l-h-16 font-size-13  d-block f-w-400 mt-5">Jhon Doe</span>
+                                    </div>
+                                    <div class="activity-course float-left mr-10">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-5">has submitted assignment to the lesson</p>
+                                    </div>
+                                    <div class="lesson-icon float-left">
+                                        <img class="mr-5 pr-t-5" src="assets/images/course-lesson-topic-icon.svg" alt="achievement">
+                                        <a href="#" class="clr-blue t-under l-h-16 font-size-13 f-w-400 ">Learning The Musical Dynamics</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="activity-information-right float-right">
+                                    <div class="ativity-time float-left ">
+                                        <p class="dark-clr l-h-16 font-size-13 f-w-400 mt-5">
+                                            <img class="mr-10" src="assets/images/online.svg" alt="online">
+                                            1 minutes ago
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="activity-inner" id="activity-3">
+                            <span class="dark-clr l-h-24 font-size-14  d-block f-w-400 mt-20 mb-20">November 2, 2021</span>
+                            <div class="activity-information bor-r-6 mb-10">
+                                <div class="activity-information-left float-left">
+                                    <div class="activity-profile float-left mr-10">
+                                        <img src="assets/images/success.svg" alt="icon">
+                                        <img class="img-r w-25 ml-10 mr-10" src="assets/images/user-avatar-image.jpg" alt="avatar">
+                                        <span class="dark-clr l-h-16 font-size-13  d-block f-w-400 mt-5">Jhon Doe</span>
+                                    </div>
+                                    <div class="activity-course float-left mr-10">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-5">complete a lesson</p>
+                                    </div>
+                                    <div class="lesson-icon float-left">
+                                        <img class="mr-5 pr-t-5" src="assets/images/course-lesson-topic-icon.svg" alt="achievement">
+                                        <a href="#" class="clr-blue t-under l-h-16 font-size-13 f-w-400 ">Learning The Musical Dynamics</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="activity-information-right float-right">
+                                    <div class="ativity-time float-left ">
+                                        <p class="dark-clr l-h-16 font-size-13 f-w-400 mt-5">
+                                            <img class="mr-10" src="assets/images/online.svg" alt="online">
+                                            18 minutes ago
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="activity-information bor-r-6 mb-10">
+                                <div class="activity-information-left float-left">
+                                    <div class="activity-profile float-left mr-10">
+                                        <img src="assets/images/success.svg" alt="icon">
+                                        <img class="img-r w-25 ml-10 mr-10" src="assets/images/user-avatar-image.jpg" alt="avatar">
+                                        <span class="dark-clr l-h-16 font-size-13  d-block f-w-400 mt-5">Jhon Doe</span>
+                                    </div>
+                                    <div class="activity-course float-left mr-10">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-5">complete a lesson</p>
+                                    </div>
+                                    <div class="lesson-icon float-left">
+                                        <img class="mr-5 pr-t-5" src="assets/images/course-lesson-topic-icon.svg" alt="achievement">
+                                        <a href="#" class="clr-blue t-under l-h-16 font-size-13 f-w-400 ">Learning The Musical Dynamics</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="activity-information-right float-right">
+                                    <div class="ativity-time float-left ">
+                                        <p class="dark-clr l-h-16 font-size-13 f-w-400 mt-5">
+                                            <img class="mr-10" src="assets/images/online.svg" alt="online">
+                                            32 minutes ago
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="activity-information bor-r-6">
+                                <div class="activity-information-left float-left">
+                                    <div class="activity-profile float-left mr-10">
+                                        <img src="assets/images/play.svg" alt="icon">
+                                        <img class="img-r w-25 ml-10 mr-10" src="assets/images/user-avatar-image.jpg" alt="avatar">
+                                        <span class="dark-clr l-h-16 font-size-13  d-block f-w-400 mt-5">Jhon Doe</span>
+                                    </div>
+                                    <div class="activity-course float-left mr-10">
+                                        <p class="light-gray-clr l-h-16 font-size-13 f-w-400 mt-5">enrolled into a course</p>
+                                    </div>
+                                    <div class="lesson-icon float-left">
+                                        <img class="mr-5 pr-t-5" src="assets/images/course-lesson-topic-icon.svg" alt="achievement">
+                                        <a href="#" class="clr-blue t-under l-h-16 font-size-13 f-w-400 ">How To Play Piano</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="activity-information-right float-right">
+                                    <div class="ativity-time float-left ">
+                                        <p class="dark-clr l-h-16 font-size-13 f-w-400 mt-5">
+                                            <img class="mr-10" src="assets/images/online.svg" alt="online">
+                                            10 minutes ago
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <button id="next" class=" bg-white btn-button bor-r-6 dark-clr l-h-16 font-size-13 f-w-400 cursor-pointer mt-20 "  onclick="getNext();">
+                            Next
+                            <img class="ml-10" src="assets/images/next-button-arrow.svg" alt="Next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------- Tabs Section Start Here ---------------->
+    <script type="application/javascript">
+        /// DARK MODE
+        function modedark(){
+            var checkmode;
+            checkmode = document.getElementById("mode");
+            if (checkmode.checked == true){
+                localStorage.setItem("mode-theme", 1);
+                document.body.classList.add("dark-theme");
+            } else {
+                localStorage.setItem("mode-theme", 0);
+                document.body.classList.remove("dark-theme");
+            }
+        }
+        function loadcheckmod(){
+            if(localStorage.getItem("mode-theme") == 1){
+                document.getElementById("mode").checked = true;
+                document.body.classList.add("dark-theme");
+            }else{
+                document.body.classList.remove("dark-theme");
+            }
+        }
+        loadcheckmod();
+        /// TABS
+        function tabfocus(active) {
+            document.querySelectorAll('.tabs').forEach(function (el) {
+                el.style.display = 'none';
+            });
+            document.querySelectorAll('.tab-menu').forEach(function (el) {
+                el.classList.remove('active');
+            });
+            event.currentTarget.className += " active";
+            document.getElementById(active).style.display = "block";
+        }
+
+        ///// Next previous
+        var current_slide_index = 1;
+        var slides = document.getElementsByClassName('activity-inner');
+        function getPrevious() {
+            if(current_slide_index > 1) {
+                current_slide_index--; // the global variable
+                show(current_slide_index);
+                document.getElementById('next').style.display='block';
+            }
+            if(current_slide_index == 1) {
+                document.getElementById('previous').style.display='none';
+            }
+        }
+        function getNext() {
+            if(current_slide_index < slides.length) {
+                current_slide_index++; // the global variable
+                show(current_slide_index);
+                document.getElementById('previous').style.display='block';
+            }
+            if(current_slide_index == slides.length) {
+                document.getElementById('next').style.display='none';
+            }
+        }
+
+        function show(index) {
+            for (var i = 0; i < slides.length; i ++) {
+                slides[i].style.display = 'none';
+            }
+            document.getElementById('activity-'+index).style.display='block';
+        }
+    </script>
+</body>
+</html>
